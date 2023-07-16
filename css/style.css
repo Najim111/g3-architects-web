@@ -12,6 +12,14 @@
     font-weight: 600px;
     cursor: pointer;
 }
+.text-light-gray {
+    color: #727272;
+}
+.section-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
 
 /* header style */
 header {
@@ -23,12 +31,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.nav-title {
-    color: #131313;
-    font-weight: 700;
-    font-size: 2.8rem;
 }
 
 nav li {
@@ -62,48 +64,17 @@ nav li a {
     color: #131313;
 }
 
-.banner-discription {
-    font-size: 16px;
-    font-weight: 400;
-    color: #727272;
-}
+
 .banner img{
     margin-top: 20px;
     width: 100%;
 }
-/* responsive style qure */
-@media screen and (max-width:576px) {
-    nav, 
-    nav > ul{
-        flex-direction: column;
-    }
-    header{
-        padding: 20px;
-    }
-    ul li{
-        margin-top: 10px;
-    }
-    .btn-primary{
-        border: 0px;
-    }
-}
 
-/* teblet for media device */
-@media screen and (min-width:577px) and (max-width:960px) {
-    nav{
-        flex-direction: column;
-
-    }
-    header{
-        padding: 20px;
-    } 
-    
-}
-/* main style */
+/*==== main style==== */
 
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 /* teams section style */
@@ -141,17 +112,45 @@ main{
     font-weight: 700px;
 }
 
-.teams-discription{
-    font-weight: 400px;
-    font-size: 1rem;
-    color: #727272;
+
+
+
+
+
+
+/* responsive style qure */
+@media screen and (max-width:576px) {
+    nav, 
+    nav > ul,
+    .teams-conteiner{
+        flex-direction: column;
+    }
+    header{
+        padding: 20px;
+    }
+    ul li{
+        margin-top: 10px;
+    }
+    .btn-primary{
+        border: 0px;
+    }
+    .teams-img-conteiner{
+        grid-template-columns: 1fr;
+    }
+    .teams-contein{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 }
 
+/* teblet for media device */
+@media screen and (min-width:577px) and (max-width:960px) {
+    nav, .teams-conteiner{
+        flex-direction: column;
 
-
-
-
-
-
-
-
+    }
+    header{
+        padding: 20px;
+    } 
+    
+}
