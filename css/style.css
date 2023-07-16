@@ -99,3 +99,59 @@ nav li a {
     } 
     
 }
+/* main style */
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* teams section style */
+
+
+.teams-conteiner{
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-conteiner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.teams-contein{
+    margin-right: 70px;
+    margin-left: 70px;
+}
+.teams-contein-title{
+    font-size: 2.8rem;
+}
+.teams-contein-title .Quick-list{
+    color: #727272;
+    font-weight: 400px;
+
+}
+.teams-contein-title .of-Our{
+    color: #131313;
+    font-weight: 700px;
+
+}
+.teams-contein-title .Features{
+    color: #FF900E;
+    font-weight: 700px;
+}
+
+.teams-discription{
+    font-weight: 400px;
+    font-size: 1rem;
+    color: #727272;
+}
+
+
+
+
+
+
+
+
+
